@@ -28,6 +28,7 @@ html {
 .container {
   background-color: #fff;
   padding: 50px;
+  border-radius: 16px;
 }
 
 .container h1 {
