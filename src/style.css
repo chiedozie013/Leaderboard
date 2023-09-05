@@ -1,3 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
-  background-color: aqua;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.container h1 {
+  font-size: 38px;
+  margin-bottom: 28px;
+}
+
+.boardContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.scores-title {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.addScore-container h3 {
+  margin-bottom: 16px;
+}
+
+.form h3 {
+  margin-bottom: 16px;
+}
+
+.name,
+.score {
+  margin-bottom: 16px;
+  border: 2px solid #000;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.scores-container {
+  border: 2px solid #000;
+}
+
+.scores-item {
+  font-size: 18px;
+  padding: 4px 8px;
+  border-bottom: 1px solid #000;
+}
+
+.scores-item:nth-child(odd) {
+  background-color: #fff;
+}
+
+.scores-item:nth-child(even) {
+  background-color: #eee;
 }
