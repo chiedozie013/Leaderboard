@@ -2,12 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Leaderboard</title>
   </head>
   <body>
     <div class="container">
-      <h3>Testing</h3>
+      <h1>Leaderboard</h1>
+      <div class="boardContainer">
+        <div class="scores-board">
+          <div class="scores-title">
+            <h3 class="title">Recent scores</h3>
+            <button class="btn">Refresh</button>
+          </div>
+          <div class="scores-container">
+            <ul class="scores-list"></ul>
+          </div>
+        </div>
+        <div class="addScore-container">
+          <form class="form">
+            <h3 class="title">Add your score</h3>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="name"
+            />
+            <br />
+            <input
+              type="number"
+              name="score"
+              placeholder="Your score"
+              class="score"
+            />
+            <br />
+            <button type="submit" class="btn input-button">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
