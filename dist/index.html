@@ -2,12 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <title>Leaderboard</title>
   <script defer src="bundle.js"></script></head>
   <body>
     <div class="container">
-      <h3>Testing</h3>
+      <h1>Leaderboard</h1>
+      <div class="boardContainer">
+        <div class="score-container">
+          <div class="score-title">
+            <h3 class="title">Recent scores</h3>
+            <button class="btn">Refresh</button>
+          </div>
+          <div class="score-board">
+            <ul class="score-list"></ul>
+          </div>
+        </div>
+        <div class="addScore-container">
+          <h3 class="title">Add your score</h3>
+          <form class="form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="name"
+            />
+            <br />
+            <input
+              type="number"
+              name="score"
+              placeholder="Your score"
+              class="score"
+            />
+            <br />
+            <input type="submit" value="Submit" class="btn input-btn" />
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

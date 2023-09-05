@@ -20,11 +20,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
-  background-color: aqua;
+___CSS_LOADER_EXPORT___.push([module.id, `*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB","sourcesContent":["body {\r\n  background-color: aqua;\r\n}\r\n"],"sourceRoot":""}]);
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  background-color: #fff;
+  padding: 50px;
+}
+.container h1 {
+  font-size: 38px;
+  margin-bottom: 28px;
+}
+.boardContainer {
+  display: flex;
+  gap: 32px;
+}
+.score-title {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 0 8px;
+}
+.title {
+  font-size: 24px;
+}
+.addScore-container h3 {
+  margin-bottom: 16px;
+}
+.form {
+  margin-bottom: 32px;
+}
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;;;EAGE,SAAS;EACT,UAAU;EACV,gBAAgB;EAChB,sBAAsB;EACtB,qBAAqB;AACvB;;AAEA;EACE,oCAAoC;EACpC,gBAAgB;EAChB,sBAAsB;EACtB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,uBAAuB;AACzB;AACA;EACE,sBAAsB;EACtB,aAAa;AACf;AACA;EACE,eAAe;EACf,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,SAAS;AACX;AACA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,cAAc;AAChB;AACA;EACE,eAAe;AACjB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Open sans\", sans-serif;\r\n  font-weight: 400;\r\n  background-color: #ccc;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n.container {\r\n  background-color: #fff;\r\n  padding: 50px;\r\n}\r\n.container h1 {\r\n  font-size: 38px;\r\n  margin-bottom: 28px;\r\n}\r\n.boardContainer {\r\n  display: flex;\r\n  gap: 32px;\r\n}\r\n.score-title {\r\n  display: flex;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.btn {\r\n  padding: 0 8px;\r\n}\r\n.title {\r\n  font-size: 24px;\r\n}\r\n.addScore-container h3 {\r\n  margin-bottom: 16px;\r\n}\r\n.form {\r\n  margin-bottom: 32px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -469,6 +521,76 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/modules/addScore.js":
+/*!*********************************!*\
+  !*** ./src/modules/addScore.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class LeaderBoard {
+  constructor() {
+    this.scores = "scores";
+    this.getStorage = JSON.parse(localStorage.getItem(this.scores)) || [];
+    this.name = document.querySelector(".name");
+    this.count = document.querySelector(".score");
+    this.btn = document.querySelector(".input-btn");
+    this.form = document.querySelector(".form");
+    this.listContainer = document.querySelector(".score-board");
+    this.listAdd = document.querySelector(".score-list");
+    this.document = document;
+  }
+
+  setStorage() {
+    localStorage.setItem(this.scores, JSON.stringify(this.getStorage));
+  }
+
+  displayScores() {
+    this.listAdd.innerHTML = "";
+    if (this.getStorage.length === 0) {
+      const msg = this.document.createElement("h3");
+      msg.textContent = "No scores yet! Add scores...";
+      msg.classList.add("display-msg");
+      this.listContainer.appendChild(msg);
+    } else {
+      this.getStorage.forEach((score) => {
+        this.listAdd.innnerHtml += `
+            <li class="scores-item">${score.name}: ${score.count}<li>
+            `;
+      });
+    }
+  }
+
+  addScores() {
+    const scoreObj = {};
+    scoreObj.name = this.name.value;
+    scoreObj.count = this.count.value;
+    scoreObj.id = Math.floor(Math.random() * 10000000);
+
+    if (this.name && this.count) {
+      this.getStorage.push(scoresObj);
+      this.setStorage();
+      this.displayScores();
+    }
+
+    this.name = "";
+    this.count = "";
+  }
+
+  submitInput() {
+    this.form.addEventListener("submit", () => this.addScores());
+    this.btn.addEventListener("click", () => this.addScores());
+    this.displayScores();
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeaderBoard);
+
+
 /***/ })
 
 /******/ 	});
@@ -552,7 +674,14 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _modules_addScore_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/addScore.js */ "./src/modules/addScore.js");
 
+
+
+
+const scores = new _modules_addScore_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+
+scores.submitInput();
 
 })();
 
