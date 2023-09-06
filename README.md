@@ -41,6 +41,9 @@ This is a JavaScript project for the Leaderboard list app, using webpack and ES6
 - **[Built with gitflow]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [https://chiedozie013.github.io/](https://chiedozie013.github.io/Leaderboard/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
