@@ -42,10 +42,6 @@ This is a JavaScript project for the Leaderboard list app, using webpack and ES6
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [https://chiedozie013.github.oi/](https://github.com/chiedozie013/Leaderboard/dist/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # 💻 Getting Started <a name="getting-started"></a>
@@ -63,13 +59,15 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone https://github.com/chiedozie013/Leaderboard
+  cd my-folder,
+  git clone https://github.com/chiedozie013/Leaderboard,
+  npm install
+  npm run start
 ```
 
 ## Usage
 
-To run this project clone this projects url into your text editor and run the live server extention
+To run this project clone this projects url into your text editor and run npm install to install all dependencies and the run npm run start to star the project
 
 ## Install
 
@@ -116,6 +114,6 @@ I would also like to acknowledge the product designer of this project. Cindy Shi
 
 # 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/chiedozie013/Leaderboard/LICENSE) licensed.
+This project is [MIT](https://github.com/chiedozie013/Leaderboard/blob/development/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
