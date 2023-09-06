@@ -116,6 +116,6 @@ I would also like to acknowledge the product designer of this project. Cindy Shi
 
 # 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/chiedozie013/Leaderboard/LICENSE) licensed.
+This project is [MIT](https://github.com/chiedozie013/Leaderboard/blob/development/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
