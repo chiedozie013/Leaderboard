@@ -44,8 +44,6 @@ This is a JavaScript project for the Leaderboard list app, using webpack and ES6
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://chiedozie013.github.oi/](https://github.com/chiedozie013/Leaderboard/dist/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # 💻 Getting Started <a name="getting-started"></a>
