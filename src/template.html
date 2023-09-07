@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leaderboard</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <div class="container">
@@ -13,7 +13,7 @@
         <div class="scores-board">
           <div class="scores-title">
             <h3 class="title">Recent scores</h3>
-            <button class="btn">Refresh</button>
+            <button class="btn refresh">Refresh</button>
           </div>
           <div class="scores-container">
             <ul class="scores-list"></ul>
