@@ -70,7 +70,7 @@ html {
 }
 
 .scores-list {
-  height: 50px;
+  height: 200px;
   overflow: auto;
 }
 
@@ -79,6 +79,7 @@ html {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .btn:hover {
   transform: scale(1.08);
 }
@@ -120,7 +121,7 @@ html {
 .scores-item:nth-child(even) {
   background-color: #eee;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;;;EAGE,SAAS;EACT,UAAU;EACV,gBAAgB;EAChB,sBAAsB;EACtB,qBAAqB;AACvB;;AAEA;EACE,oCAAoC;EACpC,gBAAgB;EAChB,sBAAsB;EACtB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,sBAAsB;EACtB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,cAAc;EACd,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,sBAAsB;AACxB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;;EAEE,mBAAmB;EACnB,sBAAsB;EACtB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,6BAA6B;AAC/B;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;AACxB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Open sans\", sans-serif;\r\n  font-weight: 400;\r\n  background-color: #ccc;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n.container {\r\n  background-color: #fff;\r\n  padding: 50px;\r\n  border-radius: 14px;\r\n}\r\n\r\n.container h1 {\r\n  font-size: 38px;\r\n  margin-bottom: 28px;\r\n}\r\n\r\n.boardContainer {\r\n  display: flex;\r\n  gap: 32px;\r\n}\r\n\r\n.scores-title {\r\n  display: flex;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.scores-list {\r\n  height: 50px;\r\n  overflow: auto;\r\n}\r\n\r\n.btn {\r\n  padding: 0 8px;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n}\r\n.btn:hover {\r\n  transform: scale(1.08);\r\n}\r\n\r\n.title {\r\n  font-size: 24px;\r\n}\r\n\r\n.addScore-container h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.form h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.name,\r\n.score {\r\n  margin-bottom: 16px;\r\n  border: 2px solid #000;\r\n  height: 32px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.scores-container {\r\n  border: 2px solid #000;\r\n}\r\n\r\n.scores-item {\r\n  font-size: 18px;\r\n  padding: 4px 8px;\r\n  border-bottom: 1px solid #000;\r\n}\r\n\r\n.scores-item:nth-child(odd) {\r\n  background-color: #fff;\r\n}\r\n\r\n.scores-item:nth-child(even) {\r\n  background-color: #eee;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;;;EAGE,SAAS;EACT,UAAU;EACV,gBAAgB;EAChB,sBAAsB;EACtB,qBAAqB;AACvB;;AAEA;EACE,oCAAoC;EACpC,gBAAgB;EAChB,sBAAsB;EACtB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,sBAAsB;EACtB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,cAAc;EACd,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;;EAEE,mBAAmB;EACnB,sBAAsB;EACtB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,6BAA6B;AAC/B;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;AACxB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Open sans\", sans-serif;\r\n  font-weight: 400;\r\n  background-color: #ccc;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n.container {\r\n  background-color: #fff;\r\n  padding: 50px;\r\n  border-radius: 14px;\r\n}\r\n\r\n.container h1 {\r\n  font-size: 38px;\r\n  margin-bottom: 28px;\r\n}\r\n\r\n.boardContainer {\r\n  display: flex;\r\n  gap: 32px;\r\n}\r\n\r\n.scores-title {\r\n  display: flex;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.scores-list {\r\n  height: 200px;\r\n  overflow: auto;\r\n}\r\n\r\n.btn {\r\n  padding: 0 8px;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n}\r\n\r\n.btn:hover {\r\n  transform: scale(1.08);\r\n}\r\n\r\n.title {\r\n  font-size: 24px;\r\n}\r\n\r\n.addScore-container h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.form h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.name,\r\n.score {\r\n  margin-bottom: 16px;\r\n  border: 2px solid #000;\r\n  height: 32px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.scores-container {\r\n  border: 2px solid #000;\r\n}\r\n\r\n.scores-item {\r\n  font-size: 18px;\r\n  padding: 4px 8px;\r\n  border-bottom: 1px solid #000;\r\n}\r\n\r\n.scores-item:nth-child(odd) {\r\n  background-color: #fff;\r\n}\r\n\r\n.scores-item:nth-child(even) {\r\n  background-color: #eee;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -579,21 +580,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class LeaderBoard {
   constructor() {
-    this.scores = 'scores';
-    this.name = document.querySelector('.name');
-    this.count = document.querySelector('.score');
-    this.btn = document.querySelector('.input-button');
-    this.form = document.querySelector('.form');
-    this.listContainer = document.querySelector('.scores-container');
-    this.listAdd = document.querySelector('.scores-list');
+    this.scores = "scores";
+    this.name = document.querySelector(".name");
+    this.count = document.querySelector(".score");
+    this.btn = document.querySelector(".input-button");
+    this.form = document.querySelector(".form");
+    this.listContainer = document.querySelector(".scores-container");
+    this.listAdd = document.querySelector(".scores-list");
     this.document = document;
-    this.apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rov8KthJ9rzrWECdKBf4/scores';
-    this.refresh = document.querySelector('.refresh');
+    this.apiEndPoint =
+      "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/tMMnsKhLHd5Wbx5jQB2z/scores";
+    this.refresh = document.querySelector(".refresh");
   }
 
   clearInput() {
-    this.name.value = '';
-    this.count.value = '';
+    this.name.value = "";
+    this.count.value = "";
   }
 
   async postScores() {
@@ -601,13 +603,13 @@ class LeaderBoard {
     const score = this.count.value;
 
     const options = {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({
         user,
         score,
       }),
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     };
 
@@ -626,11 +628,11 @@ class LeaderBoard {
 
   async displayScores() {
     const list = await this.getScores();
-    this.listAdd.innerHTML = '';
+    this.listAdd.innerHTML = "";
     if (list.result.length === 0) {
-      const msg = this.document.createElement('h3');
-      msg.textContent = 'No scores yet! Add some!';
-      msg.classList.add('display-msg');
+      const msg = this.document.createElement("h3");
+      msg.textContent = "No scores yet! Add some!";
+      msg.classList.add("display-msg");
       this.listAdd.appendChild(msg);
     } else {
       list.result
@@ -644,14 +646,14 @@ class LeaderBoard {
   }
 
   submitInput() {
-    this.form.addEventListener('submit', (e) => {
+    this.form.addEventListener("submit", (e) => {
       e.preventDefault();
       this.postScores();
     });
   }
 
   refreshScores() {
-    this.refresh.addEventListener('click', () => this.displayScores());
+    this.refresh.addEventListener("click", () => this.displayScores());
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeaderBoard);
