@@ -50,7 +50,7 @@ html {
 .container {
   background-color: #fff;
   padding: 50px;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 
 .container h1 {
@@ -111,7 +111,7 @@ html {
 .scores-item:nth-child(even) {
   background-color: #eee;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;;;EAGE,SAAS;EACT,UAAU;EACV,gBAAgB;EAChB,sBAAsB;EACtB,qBAAqB;AACvB;;AAEA;EACE,oCAAoC;EACpC,gBAAgB;EAChB,sBAAsB;EACtB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,sBAAsB;EACtB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;;EAEE,mBAAmB;EACnB,sBAAsB;EACtB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,6BAA6B;AAC/B;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;AACxB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Open sans\", sans-serif;\r\n  font-weight: 400;\r\n  background-color: #ccc;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n.container {\r\n  background-color: #fff;\r\n  padding: 50px;\r\n  border-radius: 16px;\r\n}\r\n\r\n.container h1 {\r\n  font-size: 38px;\r\n  margin-bottom: 28px;\r\n}\r\n\r\n.boardContainer {\r\n  display: flex;\r\n  gap: 32px;\r\n}\r\n\r\n.scores-title {\r\n  display: flex;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.btn {\r\n  padding: 0 8px;\r\n  border-radius: 4px;\r\n}\r\n\r\n.title {\r\n  font-size: 24px;\r\n}\r\n\r\n.addScore-container h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.form h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.name,\r\n.score {\r\n  margin-bottom: 16px;\r\n  border: 2px solid #000;\r\n  height: 32px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.scores-container {\r\n  border: 2px solid #000;\r\n}\r\n\r\n.scores-item {\r\n  font-size: 18px;\r\n  padding: 4px 8px;\r\n  border-bottom: 1px solid #000;\r\n}\r\n\r\n.scores-item:nth-child(odd) {\r\n  background-color: #fff;\r\n}\r\n\r\n.scores-item:nth-child(even) {\r\n  background-color: #eee;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;;;EAGE,SAAS;EACT,UAAU;EACV,gBAAgB;EAChB,sBAAsB;EACtB,qBAAqB;AACvB;;AAEA;EACE,oCAAoC;EACpC,gBAAgB;EAChB,sBAAsB;EACtB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,sBAAsB;EACtB,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,cAAc;EACd,kBAAkB;AACpB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;;EAEE,mBAAmB;EACnB,sBAAsB;EACtB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,6BAA6B;AAC/B;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,sBAAsB;AACxB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700&famliy=Crete+Round&family=Montserrat&family=Open+Sans:wght@400;500;600;700&family=Oswald&family=Poppins:wght@400;500;600;700&display=swap\");\r\n\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\r\n  box-sizing: border-box;\r\n  text-decoration: none;\r\n}\r\n\r\nbody {\r\n  font-family: \"Open sans\", sans-serif;\r\n  font-weight: 400;\r\n  background-color: #ccc;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n\r\n.container {\r\n  background-color: #fff;\r\n  padding: 50px;\r\n  border-radius: 14px;\r\n}\r\n\r\n.container h1 {\r\n  font-size: 38px;\r\n  margin-bottom: 28px;\r\n}\r\n\r\n.boardContainer {\r\n  display: flex;\r\n  gap: 32px;\r\n}\r\n\r\n.scores-title {\r\n  display: flex;\r\n  gap: 16px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.btn {\r\n  padding: 0 8px;\r\n  border-radius: 4px;\r\n}\r\n\r\n.title {\r\n  font-size: 24px;\r\n}\r\n\r\n.addScore-container h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.form h3 {\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.name,\r\n.score {\r\n  margin-bottom: 16px;\r\n  border: 2px solid #000;\r\n  height: 32px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.scores-container {\r\n  border: 2px solid #000;\r\n}\r\n\r\n.scores-item {\r\n  font-size: 18px;\r\n  padding: 4px 8px;\r\n  border-bottom: 1px solid #000;\r\n}\r\n\r\n.scores-item:nth-child(odd) {\r\n  background-color: #fff;\r\n}\r\n\r\n.scores-item:nth-child(even) {\r\n  background-color: #eee;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -570,57 +570,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class LeaderBoard {
   constructor() {
-    this.scores = 'scores';
-    this.getStorage = JSON.parse(localStorage.getItem(this.scores)) || [];
-    this.name = document.querySelector('.name');
-    this.count = document.querySelector('.score');
-    this.btn = document.querySelector('.input-button');
-    this.form = document.querySelector('.form');
-    this.listContainer = document.querySelector('.scores-container');
-    this.listAdd = document.querySelector('.scores-list');
+    this.scores = "scores";
+    this.name = document.querySelector(".name");
+    this.count = document.querySelector(".score");
+    this.btn = document.querySelector(".input-button");
+    this.form = document.querySelector(".form");
+    this.listContainer = document.querySelector(".scores-container");
+    this.listAdd = document.querySelector(".scores-list");
     this.document = document;
+    this.apiEndPoint =
+      "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rov8KthJ9rzrWECdKBf4/scores";
+    this.refresh = document.querySelector(".refresh");
   }
 
-  setStorage() {
-    localStorage.setItem(this.scores, JSON.stringify(this.getStorage));
+  clearInput() {
+    this.name.value = "";
+    this.count.value = "";
   }
 
-  displayScores() {
-    this.listAdd.innerHTML = '';
-    if (this.getStorage.length === 0) {
-      const msg = this.document.createElement('h3');
-      msg.textContent = 'No scores yet! Add some!';
-      msg.classList.add('display-msg');
-      this.listContainer.appendChild(msg);
-    } else {
-      this.getStorage.forEach((score) => {
-        this.listAdd.innerHTML += `
-           <li class="scores-item">${score.name}: ${score.count}</li>
-            `;
-      });
-    }
-  }
+  async postScores() {
+    const user = this.name.value;
+    const score = this.count.value;
 
-  addScores() {
-    const scoresObj = {};
-    scoresObj.name = this.name.value;
-    scoresObj.count = this.count.value;
-    scoresObj.id = Math.floor(Math.random() * 10000000);
+    const options = {
+      method: "POST",
+      body: JSON.stringify({
+        user,
+        score,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
 
     if (this.name && this.count) {
-      this.getStorage.push(scoresObj);
-      this.setStorage();
-      this.displayScores();
+      await fetch(this.apiEndPoint, options).then((res) => res.json());
     }
 
-    this.name = '';
-    this.count = '';
+    this.clearInput();
+  }
+
+  async getScores() {
+    const res = await fetch(this.apiEndPoint);
+    const data = await res.json();
+    return data;
+  }
+
+  async displayScores() {
+    const list = await this.getScores();
+    this.listAdd.innerHTML = "";
+    if (list.result.length === 0) {
+      const msg = this.document.createElement("h3");
+      msg.textContent = "No scores yet! Add some!";
+      msg.classList.add("display-msg");
+      this.listAdd.appendChild(msg);
+    } else {
+      list.result
+        .sort((a, b) => a.score - b.score)
+        .forEach((score) => {
+          this.listAdd.innerHTML += `
+         <li class="scores-item">${score.user}: ${score.score}</li>
+          `;
+        });
+    }
   }
 
   submitInput() {
-    this.form.addEventListener('submit', () => this.addScores());
-    this.btn.addEventListener('click', () => this.addScores());
-    this.displayScores();
+    this.form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      this.postScores();
+    });
+  }
+
+  refreshScores() {
+    this.refresh.addEventListener("click", () => this.displayScores());
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeaderBoard);
@@ -717,6 +740,8 @@ __webpack_require__.r(__webpack_exports__);
 const scores = new _modules_addScore_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 
 scores.submitInput();
+scores.refreshScores();
+scores.displayScores();
 
 })();
 
