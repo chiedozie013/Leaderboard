@@ -8,7 +8,7 @@ class LeaderBoard {
     this.listContainer = document.querySelector('.scores-container');
     this.listAdd = document.querySelector('.scores-list');
     this.document = document;
-    this.apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rov8KthJ9rzrWECdKBf4/scores';
+    this.apiEndPoint = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/tMMnsKhLHd5Wbx5jQB2z/scores';
     this.refresh = document.querySelector('.refresh');
   }
 
